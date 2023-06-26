@@ -1,0 +1,396 @@
+@font-face {
+  font-family: 'November';
+  src: url('./assets/Fonts/November\ Night.ttf')
+}
+
+@font-face {
+  font-family: 'Klee-Light';
+  src: url('./assets/Fonts/KleeOne/KleeOne-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'Klee-Bold';
+  src: url('./assets/Fonts/KleeOne/KleeOne-SemiBold.ttf')
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('./assets/Fonts/Montserrat/static/Montserrat-ExtraBold.ttf')
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.form-control-dark {
+  border-color: var(--bs-gray);
+
+}
+
+.form-control-dark:focus {
+  border-color: #fff;
+  box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.mt-9 {
+  margin-top: 90px;
+}
+
+.browse-text {
+
+  font-family: 'Klee-Light';
+  font-size: 20px;
+  padding: 10px;
+  color: rgb(234, 233, 233);
+}
+
+/* .text-small {
+    font-size: 85%;
+    font-family: 'Lato-light';
+  } */
+
+  .navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #111111;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+
+.navbar .dropdown ul {
+  display: block;
+  position: absolute;
+  left: 30px;
+  top: calc(100% + 30px);
+  margin: 0;
+  padding: 10px 0;
+  z-index: 99;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: 0.3s;
+}
+
+/*  */
+
+.navbar .dropdown:hover>ul {
+  opacity: 1;
+  top: 100%;
+  visibility: visible;
+}
+#Fixed-Navbar {
+  background-color: transparent;
+  padding: 20px;
+}
+
+#Fixed-Navbar,
+#logo {
+  transition: 0.8s ease;
+}
+
+@media screen and (max-width: 420px) {
+  .Pop-text{
+    background-color: #fff !important;
+    font-size: 20px;
+  }
+}
+
+
+.dropdown-toggle {
+  outline: 0;
+}
+
+.col-md-9 {
+  width: 40%;
+}
+
+.w-75 {
+  height: 80px !important;
+  width: auto !important;
+}
+
+
+
+.nav-link {
+  color: white !important;
+}
+
+.header {
+  background-color: transparent !important;
+  transition: 0.5s ease;
+}
+
+
+.mt-6 {
+  margin-top: 70px !important;
+}
+
+.btn-danger {
+  display: flex;
+  background-color: rgb(185, 95, 110) !important;
+
+
+  text-align: center !important;
+  padding: 0 !important;
+}
+
+.btn-danger:hover {
+  background-color: rgb(255, 255, 255) !important;
+  -webkit-text-fill-color: rgb(0, 0, 0) !important;
+  font-family: "Lucida Console", "Courier New", monospace !important;
+  text-align: left !important;
+}
+
+.nav-item {
+  -webkit-text-fill-color: green !important;
+
+}
+
+.nav-item {
+  -webkit-text-fill-color: white !important;
+}
+
+.down-text {
+  margin-top: -50px;
+  margin-left: 30vh;
+}
+
+.centered {
+
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+
+}
+
+.ms-6 {
+  margin-left: 420px !important;
+}
+
+.back {
+  background-color: black;
+  height: 200px !important;
+}
+
+.ms-7 {
+  text-align: center !important;
+}
+
+.mt-7 {
+  margin-bottom: 1000px !important;
+}
+
+.movie-font {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  -webkit-text-stroke: rgb(98, 0, 255) !important;
+  -webkit-text-stroke-width: 2px !important;
+  /* font-size: 30px; */
+}
+
+.neonText {
+  color: #fff;
+  text-shadow:
+    /* White glow */
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    /* Green glow */
+    0 0 42px rgb(0, 195, 255),
+    0 0 82px rgb(0, 195, 255),
+    0 0 92px rgb(0, 195, 255),
+    0 0 102px rgb(255, 255, 255),
+    0 0 151px rgb(255, 255, 255);
+  font-size: 40px !important;
+}
+
+.text-size {
+  font-size: 40px !important;
+}
+
+.border-color {
+  border-color: white !important;
+}
+
+.margin1 {
+  margin-top: -70px !important;
+}
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* rtl:begin:ignore */
+
+.me-8 {
+  margin-right: 250px !important;
+}
+
+.margin3 {
+  margin-bottom: -1500rem !important;
+}
+
+.backfill {
+  background-color: black !important;
+}
+
+.parent {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image1 {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.image2 {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  width: 25px;
+}
+
+.pt-6 {
+  padding-top: 120px !important;
+  margin-left: 50px !important;
+}
+
+.background-image {
+  background-image: url(./assets/movie\ background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.description1 {
+  font-family: 'November', sans-serif;
+  color: white;
+  margin-top: 90px;
+  opacity: 1 !important;
+}
+
+
+#HeaderCarousel .carousel-inner img {
+  width: 100%;
+  margin: auto;
+  height: 626px;
+}
+
+.video-container {
+  margin-top: 5vw;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.caption {
+  width: 100%;
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.caption h1 {
+  font-family: 'Montserrat-Bold';
+  font-size: 50px;
+  font-weight: 800px;
+  letter-spacing: 1px;
+  text-decoration: bold;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+}
+
+.caption p {
+  font-family: 'Klee-Light';
+  margin-top: 20px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+  color: #d6d0d1;
+}
+
+.caption p span {
+  font-family: 'Montserrat-Bold';
+
+}
+
+#Watch-Button {
+  top: 20px;
+  border-radius: 23px;
+  padding: 9px;
+  background-color: rgba(237, 172, 43, 0.832);
+  color: #E3E1E0;
+  font-size: 30px;
+}
+
+#Watch-Button:hover {
+  text-decoration: none;
+  background-color: rgba(246, 171, 50, 0.94);
+}
+
+.modal-content {
+  background-color: rgba(23, 24, 24, 0.9) !important;
+  color: white !important;
+}
+
+input {
+  background-color: rgb(14, 14, 14, 0.6) !important;
+  border: transparent !important;
+  border-bottom: 1px solid rgb(197, 197, 197) !important;
+}
+
+
+.dropdown-menu{
+  background-color: black !important;
+}
+
+.dropdown-menu:hover{
+  background-color: black !important;
+}
+
+.movie-button{
+  background: transparent !important;
+  border: none !important;
+}
+
+@media only screen and (max-width: 576px) {
+
+  .btn-primary {
+    font-size: 17px !important;
+  }
+}
+.login-font{
+  font-family: 'November';
+}
+
+.w-70{
+  /* width: 70% !important; */
+  width: 250px !important;
+  height: 300px !important;
+}
+
+.w-20{
+  width: 25px !important;
+  height: 25px;
+}
+.movie-title h3{
+  font-size: 20px;
+}

@@ -1,0 +1,77 @@
+.w-40 {
+  width: 40% !important;
+}
+
+.w-15 {
+  width: 15% !important;
+}
+
+.banner-img {
+  border-radius: 10px;
+  transition: transform .2s;
+}
+
+.movies-list {
+  background-color: rgb(16, 16, 17, 0.6);
+}
+
+.movie-description {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+}
+
+.movie-description h2 {
+  font-family: 'Montserrat-Bold';
+  color: white;
+}
+
+.movie-description h2 {
+  border-radius: 10px;
+
+}
+
+.movies-list h2 {
+  font-family: 'Montserrat-Bold';
+  color: white;
+}
+
+.banner-img:hover {
+  cursor: pointer;
+  -ms-transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  transform: scale(1.3);
+}
+
+.movie-box {
+  border-radius: 10px;
+  transition: transform .2s;
+}
+
+.decription-container {
+  display: none;
+}
+
+.movie-box:hover+.decription-container {
+  display: block;
+  color: black;
+}
+
+.movie-box:hover {
+  cursor: pointer;
+  -ms-transform: scale(1.3);
+  /* IE 9 */
+  -webkit-transform: scale(1.3);
+  /* Safari 3-8 */
+  transform: scale(1.3);
+  box-shadow: 1px 2px 30px 10px rgb(52, 51, 51);
+}
+
+.dropdown-menu{
+  background-color: black !important;
+}
+
+.dropdown-menu:hover{
+  background-color: black !important;
+}

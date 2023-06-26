@@ -1,0 +1,568 @@
+<html>
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="action.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="movies.css">
+    <head>
+      
+        <style>
+            .bd-placeholder-img {
+       font-size: 1.125rem;
+       text-anchor: middle;
+       -webkit-user-select: none;
+       -moz-user-select: none;
+       user-select: none;
+     }
+     @media (min-width: 768px) {
+       .bd-placeholder-img-lg {
+         font-size: 3.5rem;
+       }
+     }
+     </style>
+        <title>Action Movies</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
+        </head>
+        <body>
+            <div class="background-image2">
+              <div class="b-example-divider "></div>
+
+              <nav class="navbar navbar-expand-lg fixed-top px-5" id="Fixed-NavBar">
+                <div class="container-fluid header">
+                  <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src='./assets/Logo.png' class="w-25" id='logo' />
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="background-color: white !important; border: none !important">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./Home.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./movies.html">Movies</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" style="color: white" href="./action.html">Action</a></li>
+                          <li><a class="dropdown-item" style="color: white" href="./Horror.html">Horror</a></li>
+                          <li>
+                          <li><a class="dropdown-item" style="color: white" href="./Comedy.html">Comedy</a></li>
+                        </ul>
+                      </li>
+            
+                    </ul>
+                    <form class="d-flex" role="search">
+                     
+                      <button class="btn btn-success me-2" type="button" data-bs-toggle="modal"
+                        data-bs-target="#loginModal">Login</button>
+                      <button class="btn btn-outline-success" type="button" data-bs-toggle="modal"
+                        data-bs-target="#signupModal">Signup</button>
+            
+                    </form>
+                  </div>
+                </div>
+              </nav>
+              <section class="container-fluid p-5">     
+                  <div class="col-12 Pop-text">
+                    <p>Popular Action Movies/TV Shows</p>
+                  </div>
+                  <div class="row mt-5" > <!--Margin overall on the div (CSS element)-->
+                    <div class="col-md-3 col-lg-3 col-sm-12  banner-img">
+                      <button data-bs-toggle="modal"
+                      data-bs-target="#movieModal1" class="movie-button">
+                        <img src="./assets/bullettrain.jpg" class="img-fluid w-70" />  <!--Padded the top part of it downwards to create a space (pt-7)-->
+                        <div class="d-flex movie-title mt-3 mb-3">
+                          <h3 style="color:white;">Bullet Train:   73%</h3>
+                          <img src="./assets/heart.png" class="w-20 mt-1 ms-2"/>
+                        </div>
+                        
+                      </button>
+                    </div>
+                    <div class="col-md-3 col-lg-3 col-sm-12  banner-img">
+                        <button data-bs-toggle="modal"
+                      data-bs-target="#movieModal2" class="movie-button">
+                            <img src="./assets/black adam.jpg" class="img-fluid w-70" />  <!--Padded the top part of it downwards to create a space-->
+                          
+                            <div class="d-flex movie-title mt-3 mb-3">
+                              <h3 style="color:white;">Black Adam:   73%</h3>
+                              <img src="./assets/heart.png" class="w-20 mt-1 ms-2"/>
+                            </div>
+                        </button>
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-sm-12 banner-img">
+                         <button data-bs-toggle="modal"
+                      data-bs-target="#movieModal3" class="movie-button">
+                            <img src="./assets/maverick.jpg" class="img-fluid w-70" />  <!--Padded the top part of it downwards to create a space-->               
+                           
+                            <div class="d-flex movie-title mt-3 mb-3">
+                              <h3 style="color:white;">Top-Gun Maverick:   83%</h3>
+                              <img src="./assets/heart.png" class="w-20 mt-1 ms-2"/>
+                            </div>
+                        </button>
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-sm-12 banner-img">
+                        <button data-bs-toggle="modal"
+                      data-bs-target="#movieModal4" class="movie-button">
+                            <img src="./assets/chainsaw.jpg" class="img-fluid w-70" />  <!--Padded the top part of it downwards to create a space-->
+                           
+                            <div class="d-flex movie-title mt-3 mb-3">
+                              <h3 style="color:white;">Chainsaw Man:   88%</h3>
+                              <img src="./assets/heart.png" class="w-20 mt-1 ms-2"/>
+                            </div> 
+                        </button>
+                      </div>
+
+                            <div class="col-md-3 col-lg-3 col-sm-12 banner-img">
+                              <button data-bs-toggle="modal"
+                      data-bs-target="#movieModal5" class="movie-button">  
+                              <img src="./assets/thor.jpg" class="img-fluid w-70" />  <!--Padded the top part of it downwards to create a space (pt-7)-->
+                               
+                                <div class="d-flex movie-title mt-3 mb-3">
+                                  <h3 style="color:white;">Thor-Love & Thunder:   73%</h3>
+                                  <img src="./assets/heart.png" class="w-20 mt-1 ms-2"/>
+                                </div> 
+                              </button>  
+                              </div>
+                                <div class="col-md-3 col-lg-3 col-sm-12 banner-img">
+                                  <button data-bs-toggle="modal"
+                      data-bs-target="#movieModal6" class="movie-button">  
+                                  <img src="./assets/bleach.jpg" class="img-fluid w-70" />  <!--Padded the top part of it downwards to create a space-->
+                                    <div class="d-flex movie-title mt-3 mb-3">
+                                    <h3 style="color:white;">Bleach-TYBW:   73%</h3>
+                                      <img src="./assets/heart.png" class="w-20 mt-1 ms-2"/>
+                                    </div> 
+                                  </button>
+                                  </div>
+                                  <div class="col-md-3 col-lg-3 col-sm-12 banner-img">
+                                    <button data-bs-toggle="modal"
+                      data-bs-target="#movieModal7" class="movie-button">
+                                    <img src="./assets/Punisher.jpg" class="img-fluid w-70" />  <!--Padded the top part of it downwards to create a space-->
+                                    <div class="d-flex movie-title mt-3 mb-3">
+                                      <h3 style="color:white; "">The Punisher:  83%</h3>
+                                        <img src="./assets/heart.png" class="w-20 mt-1 ms-2"/>
+                                      </div> 
+                                  </button>
+                                  </div>
+                                  <div class="col-md-3 col-lg-3 col-sm-12 banner-img">
+                                    <button data-bs-toggle="modal"
+                      data-bs-target="#movieModal8" class="movie-button">
+                                    <img src="./assets/john wick.jpg" class="img-fluid w-70" />  <!--Padded the top part of it downwards to create a space-->
+                                    <div class="d-flex movie-title mt-3 mb-3">
+                                      <h3 style="color:white;">John Wick (2014):   90%</h3>
+
+                                        <img src="./assets/heart.png" class="w-20 mt-1 ms-2"/>
+                                      </div> 
+                                    
+                                  </button>
+                                </div>
+                  </div>
+              <!--Modal for First picture-->
+                  <div class="modal fade" id="movieModal1" tabindex="-1" aria-labelledby="movieModalLabel1" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                          <img src="./assets/bullettrain.jpg" class="img-fluid w-25 m-2" />  
+                          <h5 class="modal-title">Five assassins aboard a swiftly-moving bullet train find out that their missions have something in common..</h5>
+
+                          <form>
+                            <div class="mb-3">
+                              <h3 style="margin-top:10px;">Watch Trailer</h3>
+                              <a href="./movies.html" style="margin-left:20px; margin-top:0px;" type="button" class="btn btn-outline-warning me-2 w-15 fs-10 ">Watch</a>
+                            <div class="mb-3">
+                              <h3>Where to Watch?</h3>
+                              <button class="movie-button">
+                              <img src="./assets/fox.png" style="width:55px; margin-top: 10px; margin-left:80px; border:1px solid white;"/>
+                              </button>
+                              <button class="movie-button">
+                                <img src="./assets/hotstar.png" style="width:55px; margin-top: 10px; margin-left:30px; border:1px solid white;"/>
+                                </button>
+                                <button class="movie-button">
+                                  <img src="./assets/hulu.jpg" style="width:55px; margin-top: 10px; margin-left:30px; border:1px solid white;"/>
+                                  </button>
+                              
+
+                              
+                            </div>
+  
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+                            <!--Modal for Second picture-->
+                            <div class="modal fade" id="movieModal2" tabindex="-1" aria-labelledby="movieModalLabel2" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <img src="./assets/black adam.jpg" class="img-fluid w-25 m-2" />  
+                                    <h5 class="modal-title">Nearly 5,000 years after he was bestowed with the almighty powers of the Egyptian gods--and imprisoned just as quickly--Black Adam is freed from his earthly tomb, ready to unleash his unique form of justice on the modern world.</h5>
+          
+                                    <form>
+                                      <div class="mb-3">
+                                        <h3 style="margin-top:10px;">Watch Trailer</h3>
+                                        <a href="./movies.html" style="margin-left:20px; margin-top:0px;" type="button" class="btn btn-outline-warning me-2 w-15 fs-10 ">Watch</a>
+                                      <div class="mb-3">
+                                        <h3>Where to Watch?</h3>
+                                        <button class="movie-button">
+                                        <img src="./assets/fox.png" style="width:55px; margin-top: 10px; margin-left:80px; border:1px solid white;"/>
+                                        </button>
+                                        <button class="movie-button">
+                                          <img src="./assets/hotstar.png" style="width:55px; margin-top: 10px; margin-left:30px; border:1px solid white;"/>
+                                          </button>
+                                          <button class="movie-button">
+                                            <img src="./assets/hulu.jpg" style="width:55px; margin-top: 10px; margin-left:30px; border:1px solid white;"/>
+                                          </button>
+                                      </div>
+            
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>               
+
+                            <!--Modal for Third picture-->
+                            <div class="modal fade" id="movieModal3" tabindex="-1" aria-labelledby="movieModalLabel3" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <img src="./assets/maverick.jpg" class="img-fluid w-25 m-2" />  
+                                    <h5 class="modal-title">After thirty years, Maverick is still pushing the envelope as a top naval aviator, but must confront ghosts of his past when he leads TOP GUN's elite graduates on a mission that demands the ultimate sacrifice from those chosen to fly it.</h5>
+          
+                                    <form>
+                                      <div class="mb-3">
+                                        <h3 style="margin-top:10px;">Watch Trailer</h3>
+                                        <a href="./movies.html" style="margin-left:20px; margin-top:0px;" type="button" class="btn btn-outline-warning me-2 w-15 fs-10 ">Watch</a>
+                                      <div class="mb-3">
+                                        <h3>Where to Watch?</h3>
+                                        <button class="movie-button">
+                                        <img src="./assets/fox.png" style="width:55px; margin-top: 10px; margin-left:80px; border:1px solid white;"/>
+                                        </button>
+                                        <button class="movie-button">
+                                          <img src="./assets/hotstar.png" style="width:55px; margin-top: 10px; margin-left:30px; border:1px solid white;"/>
+                                          </button>
+                                          <button class="movie-button">
+                                            <img src="./assets/hulu.jpg" style="width:55px; margin-top: 10px; margin-left:30px; border:1px solid white;"/>
+                                          </button>
+                                      </div>
+            
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>    
+
+                            <!--Modal for Fourth picture-->
+                            <div class="modal fade" id="movieModal4" tabindex="-1" aria-labelledby="movieModalLabel4" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <img src="./assets/chainsaw.jpg" class="img-fluid w-25 m-2" />  
+                                    <h5 class="modal-title">Following a betrayal, a young man left for the dead is reborn as a powerful devil-human hybrid after merging with his pet devil and is soon enlisted into an organization dedicated to hunting devils.</h5>
+          
+                                    <form>
+                                      <div class="mb-3">
+                                        <h3 style="margin-top:10px;">Watch Trailer</h3>
+                                        <a href="./movies.html" style="margin-left:20px; margin-top:0px;" type="button" class="btn btn-outline-warning me-2 w-15 fs-10 ">Watch</a>
+                                      <div class="mb-3">
+                                        <h3>Where to Watch?</h3>
+                                        <button class="movie-button">
+                                        <img src="./assets/fox.png" style="width:55px; margin-top: 10px; margin-left:80px; border:1px solid white;"/>
+                                        </button>
+                                        <button class="movie-button">
+                                          <img src="./assets/hotstar.png" style="width:55px; margin-top: 10px; margin-left:30px; border:1px solid white;"/>
+                                          </button>
+                                          <button class="movie-button">
+                                            <img src="./assets/hulu.jpg" style="width:55px; margin-top: 10px; margin-left:30px; border:1px solid white;"/>
+                                          </button>
+                                      </div>
+            
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div> 
+
+                            <!--Modal for Fifth picture-->
+                            <div class="modal fade" id="movieModal5" tabindex="-1" aria-labelledby="movieModalLabel5" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <img src="./assets/thor.jpg" class="img-fluid w-25 m-2" />  
+                                    <h5 class="modal-title">Thor enlists the help of Valkyrie, Korg and ex-girlfriend Jane Foster to fight Gorr the God Butcher, who intends to make the gods extinct.</h5>
+          
+                                    <form>
+                                      <div class="mb-3">
+                                        <h3 style="margin-top:10px;">Watch Trailer</h3>
+                                        <a href="./movies.html" style="margin-left:20px; margin-top:0px;" type="button" class="btn btn-outline-warning me-2 w-15 fs-10 ">Watch</a>
+                                      <div class="mb-3">
+                                        <h3>Where to Watch?</h3>
+                                        <button class="movie-button">
+                                        <img src="./assets/fox.png" style="width:55px; margin-top: 10px; margin-left:80px; border:1px solid white;"/>
+                                        </button>
+                                        <button class="movie-button">
+                                          <img src="./assets/hotstar.png" style="width:55px; margin-top: 10px; margin-left:30px; border:1px solid white;"/>
+                                          </button>
+                                          <button class="movie-button">
+                                            <img src="./assets/hulu.jpg" style="width:55px; margin-top: 10px; margin-left:30px; border:1px solid white;"/>
+                                          </button>
+                                      </div>
+            
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                            <!--Modal for Sixth picture-->
+                            <div class="modal fade" id="movieModal6" tabindex="-1" aria-labelledby="movieModalLabel6" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <img src="./assets/bleach.jpg" class="img-fluid w-25 m-2" />  
+                                    <h5 class="modal-title">The peace is suddenly broken when warning sirens blare through the Soul Society. Residents are disappearing without a trace and nobody knows who's behind it. Meanwhile, a darkness is approaching Ichigo and his friends in Karakura Town.</h5>
+          
+                                    <form>
+                                      <div class="mb-3">
+                                        <h3 style="margin-top:10px;">Watch Trailer</h3>
+                                        <a href="./movies.html" style="margin-left:20px; margin-top:0px;" type="button" class="btn btn-outline-warning me-2 w-15 fs-10 ">Watch</a>
+                                      <div class="mb-3">
+                                        <h3>Where to Watch?</h3>
+                                        <button class="movie-button">
+                                        <img src="./assets/fox.png" style="width:55px; margin-top: 10px; margin-left:80px; border:1px solid white;"/>
+                                        </button>
+                                        <button class="movie-button">
+                                          <img src="./assets/hotstar.png" style="width:55px; margin-top: 10px; margin-left:30px; border:1px solid white;"/>
+                                          </button>
+                                          <button class="movie-button">
+                                            <img src="./assets/hulu.jpg" style="width:55px; margin-top: 10px; margin-left:30px; border:1px solid white;"/>
+                                          </button>
+                                      </div>
+            
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>     
+
+                            <!--Modal for Seventh picture-->
+                            <div class="modal fade" id="movieModal7" tabindex="-1" aria-labelledby="movieModalLabel7" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <img src="./assets/Punisher.jpg" class="img-fluid w-25 m-2" />  
+                                    <h5 class="modal-title">After his revenge on those who murdered his family, aimless Marine veteran Frank Castle finds a new meaning in life as a vigilante known as "The Punisher".</h5>
+          
+                                    <form>
+                                      <div class="mb-3">
+                                        <h3 style="margin-top:10px;">Watch Trailer</h3>
+                                        <a href="./movies.html" style="margin-left:20px; margin-top:0px;" type="button" class="btn btn-outline-warning me-2 w-15 fs-10 ">Watch</a>
+                                      <div class="mb-3">
+                                        <h3>Where to Watch?</h3>
+                                        <button class="movie-button">
+                                        <img src="./assets/fox.png" style="width:55px; margin-top: 10px; margin-left:80px; border:1px solid white;"/>
+                                        </button>
+                                        <button class="movie-button">
+                                          <img src="./assets/hotstar.png" style="width:55px; margin-top: 10px; margin-left:30px; border:1px solid white;"/>
+                                          </button>
+                                          <button class="movie-button">
+                                            <img src="./assets/hulu.jpg" style="width:55px; margin-top: 10px; margin-left:30px; border:1px solid white;"/>
+                                          </button>
+                                      </div>
+            
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div> 
+
+                            <!--Modal for Eigth picture-->
+                            <div class="modal fade" id="movieModal8" tabindex="-1" aria-labelledby="movieModalLabel8" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <img src="./assets/john wick.jpg" class="img-fluid w-25 m-2" />  
+                                    <h5 class="modal-title">An ex-hit-man comes out of retirement to track down the gangsters that killed his dog and took his car.</h5>
+          
+                                    <form>
+                                      <div class="mb-3">
+                                        <h3 style="margin-top:10px;">Watch Trailer</h3>
+                                        <a href="./movies.html" style="margin-left:20px; margin-top:0px;" type="button" class="btn btn-outline-warning me-2 w-15 fs-10 ">Watch</a>
+                                      <div class="mb-3">
+                                        <h3>Where to Watch?</h3>
+                                        <button class="movie-button">
+                                        <img src="./assets/fox.png" style="width:55px; margin-top: 10px; margin-left:80px; border:1px solid white;"/>
+                                        </button>
+                                        <button class="movie-button">
+                                          <img src="./assets/hotstar.png" style="width:55px; margin-top: 10px; margin-left:30px; border:1px solid white;"/>
+                                          </button>
+                                          <button class="movie-button">
+                                            <img src="./assets/hulu.jpg" style="width:55px; margin-top: 10px; margin-left:30px; border:1px solid white;"/>
+                                          </button>
+                                      </div>
+            
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </section>
+                          </div>
+   <!-- Modal For Login -->
+   <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title login-font" id="loginupModalLabel" >Log-In</h5>              <!--Used CSS for LoginIn font (login-font)-->
+          <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label login-font">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label login-font">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <button type="submit" class="btn btn-warning login-font">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info" data-bs-dismiss="modal">Close</button>
+        </div>
+        <div>
+          <img src="./assets/PopWatch.png" style="width:70px; margin-top:-70px;"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <!-- Modal For Signup -->
+  <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title login-font" id="loginupModalLabel" >Sign-Up/Register</h5>              <!--Used CSS for LoginIn font (login-font)-->
+          <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label login-font">Username</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label login-font">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            <div class="mb-3">
+              <label for="exampleInputPassword1" class="form-label login-font">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <label for="exampleInputPassword1" class="form-label login-font">Confirm Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label login-font" for="exampleCheck1">Check me out</label>
+          </div>
+            <button type="submit" class="btn btn-warning login-font">Submit</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-info login-font" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-warning login-font">Save changes</button>
+        </div>
+        <div>
+          <img src="./assets/PopWatch.png" style="width:70px; margin-top:-70px;"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>                       
+                <!--Footer-->
+                <div class="b-example-divider"></div>
+                <div class="container-fluid back">
+                  <footer class="py-3 my-4">
+                    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                      <li class="nav-item1"><a href="./Home.html" class="nav-link px-2 text-warning login-font">Home</a></li>
+                      <li class="nav-item1"><a href="./movies.html" class="nav-link px-2 text-warning login-font">Movies</a></li>
+                      <li class="nav-item1"><a href="./action.html" class="nav-link px-2 text-warning login-font">Action</a></li>
+                      <li class="nav-item1"><a href="./Horror.html" class="nav-link px-2 text-warning login-font">Horror</a></li>
+                      <li class="nav-item1"><a href="./Comedy.html" class="nav-link px-2 text-warning login-font">Comedy</a></li>
+                    </ul>
+                    <p class="text-center text-light login-font">Contact Us: 1111-415-152</p>
+                    <button class="movie-button">
+                      <a href="https://www.instagram.com/"/>
+                      <img src="./assets/instagram.png" style="width:35px; margin-top: -2px; margin-left:690px;"/>
+                      </button>
+                      <button class="movie-button">
+                        <a href="https://mail.google.com/mail/u/0/#inbox"/>
+                        <img src="./assets/mail.png" style="width:35px; margin-top: -2px; margin-left:20px;"/>
+                        </button>
+                        <button class="movie-button">
+                          <a href="https://twitter.com/home"/>
+                          <img src="./assets/twitter.png" style="width:35px; margin-top: -2px; margin-left:20px;"/>
+                          </button>
+                  </footer>
+        </div>                                                                       
+                  <script>
+                    $(document).ready(function () {
+                      $(window).scroll(function () {
+                        var scroll = $(window).scrollTop();
+                        if (scroll > 80) {
+                          $("#Fixed-NavBar").css("background", "rgb(17, 16, 16,0.8)");
+                        }
+          
+                        else {
+                          $("#Fixed-NavBar").css("background", "none");
+                        }
+                      })
+                    })
+          
+                    window.onscroll = function () { scrollFunction() };
+          
+                    function scrollFunction() {
+                      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+                        document.getElementById("Fixed-NavBar").style.padding = "10px 0px";
+                        document.getElementById("logo").style.width = "5%"
+                        document.getElementById("logo").style.height = "10%"
+          
+          
+                      } else {
+                        document.getElementById("Fixed-NavBar").style.padding = "25px 20px 10px 10px";
+                        document.getElementById("logo").style.width = "25%"
+                        document.getElementById("logo").style.height = "25%"
+                      }
+                    }
+                  </script>
+        </body>
+</html>
